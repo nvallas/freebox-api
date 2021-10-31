@@ -1,5 +1,7 @@
+from freebox_api.access import Access
+
 class Switch:
-    def __init__(self, access):
+    def __init__(self, access: Access):
         self._access = access
 
     switch_duplex = ["auto", "full", "half"]

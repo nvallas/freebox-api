@@ -1,10 +1,12 @@
 import logging
 
+from freebox_api.access import Access
+
 logger = logging.getLogger(__name__)
 
 
 class Dhcp:
-    def __init__(self, access):
+    def __init__(self, access: Access):
         self._access = access
 
     static_lease_schema = {"ip": "", "mac": "", "comment": ""}

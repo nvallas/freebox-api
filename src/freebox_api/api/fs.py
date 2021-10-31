@@ -2,6 +2,7 @@ import base64
 import logging
 import os
 
+from freebox_api.access import Access
 import freebox_api.exceptions
 
 
@@ -13,7 +14,7 @@ class Fs:
     Fs
     """
 
-    def __init__(self, access):
+    def __init__(self, access: Access):
         self._access = access
         self._path = "/"
 
