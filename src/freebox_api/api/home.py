@@ -2,6 +2,10 @@
 from freebox_api.access import Access
 
 class Home:
+    """
+    Home
+    """
+
     def __init__(self, access: Access):
         self._access = access
 
