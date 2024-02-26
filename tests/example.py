@@ -43,8 +43,8 @@ async def demo():
     # Dump DHCP configuration using dhcp API
     fbx_dhcp_config = await fbx.dhcp.get_config()
     # Modify ip_range configuration
-    fbx_dhcp_config["ip_range_start"] = "192.168.0.10"
-    fbx_dhcp_config["ip_range_end"] = "192.168.0.50"
+    # fbx_dhcp_config["ip_range_start"] = "192.168.0.10"
+    # fbx_dhcp_config["ip_range_end"] = "192.168.0.50"
     # Send new configuration to the freebox. This line is commented to
     # avoid any disaster.
     # await fbx.dhcp.set_config(fbx_dhcp_config)
